@@ -1,0 +1,201 @@
+\documentclass[12pt,oneside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Zusaetzliche Pakete  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{enumerate}  
+\usepackage{fancyhdr}
+\usepackage{a4wide}
+\usepackage{graphicx}
+\usepackage{palatino}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{acronym}% http://ctan.org/pkg/acronym
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+%folgende Zeile auskommentieren für englische Arbeiten
+%\usepackage[ngerman]{babel}
+%folgende Zeile auskommentieren für deutsche Arbeiten
+\usepackage[ngerman, english]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bookmarks]{hyperref}
+\usepackage[justification=centering]{caption}
+\usepackage[style=apa,natbib=true,backend=biber,maxbibnames=20]{biblatex}
+\usepackage{csquotes}
+\bibliography{literature}
+
+\setlength{\parindent}{0em} 
+\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[enumerate]{noitemsep, topsep=0pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Definition der Kopfzeile %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+\setlength{\headheight}{16pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Definition des Deckblattes und der Titelseite  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\JMUTitle}[9]{
+
+  \thispagestyle{empty}
+  \vspace*{\stretch{1}}
+  {\parindent0cm
+  \rule{\linewidth}{.7ex}}
+  \begin{flushright}
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\Huge
+    #1\\
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\large
+    #2\\
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\small
+    #3
+  \end{flushright}
+  \rule{\linewidth}{.7ex}
+
+  \vspace*{\stretch{1}}
+  \begin{center}
+    \includegraphics[width=2in]{siegel} \\
+    \vspace*{\stretch{1}}
+    \Large Bachelorarbeit  \\
+
+    \vspace*{\stretch{2}}
+   \large Lehrstuhl f\"{u}r Wirtschaftsinformatik\\
+    \large und Systementwicklung\\
+    \large Universität Würzburg\\
+    \vspace*{\stretch{1}}
+    \large Betreuer:  #8 \\[1mm]
+    
+    \vspace*{\stretch{1}}
+    \large W\"urzburg, den #7 \\
+        \vspace*{\stretch{0.25}}
+
+    % Bearbeitungszeit: 14.03.2025 - 09.05.2025 % Die Bearbeitungszeit der Seminar-/ Abschlussarbeit ist hier einzutragen.
+
+  \end{center}
+}
+
+\titlespacing*{\section}
+{0pt}{3.5ex plus 1ex minus .2ex}{.2ex plus .2ex}
+\titlespacing*{\subsection}
+{0pt}{1.5ex plus 1ex minus .2ex}{.2ex plus .2ex}
+\titlespacing*{\subsubsection}
+{0pt}{1.5ex plus 1ex minus .2ex}{.2ex plus .2ex}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Beginn des Dokuments  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+  \JMUTitle
+      {Data Objects in ML Contexts: A Systematic Literature Review in IS Research}        % Titel der Arbeit
+      {Linus Schärmann}                        % Vor- und Nachname des Autors
+      {2910412}
+      
+      {Wirtschaftswissenschaftlichen Fakultät}  % Name der Fakultaet
+      {W"urzburg 2026}                          % Ort und Jahr der Erstellung
+      {31.01.2026}                              % Tag der Abgabe
+      {Tim Thorwart-Gumpert}               % Name des Erstgutachters
+      {}                          % Name des Zweitgutachters
+
+  \clearpage
+
+\lhead{}
+\pagenumbering{Roman} 
+    \setcounter{page}{1}
+
+\tableofcontents
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Kurzzusammenfassung   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newpage
+% \lhead{Abstract}
+% \section*{Abstract}
+% \addcontentsline{toc}{section}{Abstract}
+
+%\newpage
+%\lhead{List of Figures} % Bei englischsprachiger Arbeit anzupassen auf: List of Figures
+%\addcontentsline{toc}{section}{List of Figures} % Bei englischsprachiger Arbeit anzupassen auf: List of Figures
+%\listoffigures
+
+% \newpage
+% \lhead{List of Tables} % Bei englischsprachiger Arbeit anzupassen auf: List of Tables
+% \addcontentsline{toc}{section}{List of Tables} % Bei englischsprachiger Arbeit anzupassen auf: List of Tables
+% \listoftables
+% \newpage
+
+\setlength{\parskip}{0.5em} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Definition der Abkürzungen  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lhead{List of Abbreviations} % Bei englischsprachiger Arbeit anzupassen auf: List of Abbreviations
+% \section*{List of Abbreviations} % Bei englischsprachiger Arbeit anzupassen auf: List of Abbreviations
+% \addcontentsline{toc}{section}{List of Abbreviations} % Bei englischsprachiger Arbeit anzupassen auf: List of Abbreviations
+
+% \begin{acronym}
+
+% \end{acronym}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Einstellungen  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\pagenumbering{arabic}  
+    \setcounter{page}{1}
+\lhead{\nouppercase{\leftmark}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Hauptteil  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction} \label{introduction}
+
+\cite{alaimo2022organizations}
+
+\cite{okoli2015guide}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Literaturverzeichnis wird 
+%% automatisch eingefügt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\lhead{}
+\printbibliography
+\addcontentsline{toc}{section}{\bibname}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Anhang (optional) 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+%\appendix
+%\section{Appendix A} % Bei englischsprachiger Arbeit anzupassen auf: Appendix A
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Eidesstattliche Erklärung
+%% muss angepasst werden 
+%% in Erklaerung.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Erklaerung.tex}
+
+\end{document}
