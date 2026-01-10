@@ -103,7 +103,7 @@
 \begin{document}
 
   \JMUTitle
-      {Data Objects in ML Contexts: A Systematic Literature Review in IS Research}        % Titel der Arbeit
+      {Seeing Through Data: A Systematic Literature Review on the Role of Visualization and Interface Design in the Organizational Use of Data Objects}        % Titel der Arbeit
       {Linus Schärmann}                        % Vor- und Nachname des Autors
       {2910412}
       
@@ -125,21 +125,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Kurzzusammenfassung   %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \newpage
-% \lhead{Abstract}
-% \section*{Abstract}
-% \addcontentsline{toc}{section}{Abstract}
+\newpage
+\lhead{Abstract}
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
 
-%\newpage
-%\lhead{List of Figures} % Bei englischsprachiger Arbeit anzupassen auf: List of Figures
-%\addcontentsline{toc}{section}{List of Figures} % Bei englischsprachiger Arbeit anzupassen auf: List of Figures
-%\listoffigures
+\newpage
+\lhead{List of Figures} % Bei englischsprachiger Arbeit anzupassen auf: List of Figures
+\addcontentsline{toc}{section}{List of Figures} % Bei englischsprachiger Arbeit anzupassen auf: List of Figures
+\listoffigures
 
-% \newpage
-% \lhead{List of Tables} % Bei englischsprachiger Arbeit anzupassen auf: List of Tables
-% \addcontentsline{toc}{section}{List of Tables} % Bei englischsprachiger Arbeit anzupassen auf: List of Tables
-% \listoftables
-% \newpage
+\newpage
+\lhead{List of Tables} % Bei englischsprachiger Arbeit anzupassen auf: List of Tables
+\addcontentsline{toc}{section}{List of Tables} % Bei englischsprachiger Arbeit anzupassen auf: List of Tables
+\listoftables
+\newpage
 
 \setlength{\parskip}{0.5em} 
 
@@ -147,13 +147,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Definition der Abkürzungen  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \lhead{List of Abbreviations} % Bei englischsprachiger Arbeit anzupassen auf: List of Abbreviations
-% \section*{List of Abbreviations} % Bei englischsprachiger Arbeit anzupassen auf: List of Abbreviations
-% \addcontentsline{toc}{section}{List of Abbreviations} % Bei englischsprachiger Arbeit anzupassen auf: List of Abbreviations
+\lhead{List of Abbreviations} % Bei englischsprachiger Arbeit anzupassen auf: List of Abbreviations
+\section*{List of Abbreviations} % Bei englischsprachiger Arbeit anzupassen auf: List of Abbreviations
+\addcontentsline{toc}{section}{List of Abbreviations} % Bei englischsprachiger Arbeit anzupassen auf: List of Abbreviations
 
-% \begin{acronym}
-
-% \end{acronym}
+\begin{acronym}
+  \acro{DO}{Data Object}
+  \acro{ML}{Machine Learning}
+\end{acronym}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Einstellungen  %%
@@ -169,10 +170,86 @@
 
 \section{Introduction} \label{introduction}
 
-\cite{alaimo2022organizations}
+\citet{RN1}
 
-\cite{okoli2015guide}
+\section{Theoretical Background} \label{theoretical-background}
 
+\subsection{Boundary Objects} \label{boundary-objects}
+
+\subsection{Data Objects as Epistemic Artifacts} \label{data-objects-as-epistemic-artifacts}
+
+\section{Methodology} \label{methodology}
+
+The review follows a structured approach based on the guidelines provided by \citet{RN2}. 
+
+\subsection{Purpose} \label{purpose}
+
+Planning - Explicit + Comprehensive + Reproducible
+
+Purpose of this review is to identify and analyze existing literature that address the role of visualization and interface design in the organizational use of \acp{DO} within \ac{ML} contexts. 
+
+\subsection{Draft Protocol} \label{draft-protocol}
+
+Planning - Explicit + Comprehensive
+
+\subsection{Practical Screening} \label{practical-screening}
+
+Selection - Quantitative + Qualitative
+
+\begin{itemize}
+  \item Content: Data Objects, Visualization, Interface Design in Organizational Use
+  \item Language: English, (German)
+  \item Time Frame: 2005 - present
+  \item Publication Type: Peer-Reviewed Journals, Conference Proceedings
+  \item Setting: Organizational/professional
+  \item Participants: Professionals, managers, analysts, data scientists
+  \item Artifact: Dashboards, ML interfaces, analytics tools
+  \item Design: Empirical or strong conceptual
+\end{itemize}
+
+\subsection{Literature Search} \label{literature-search}
+
+Selection - Quantitative + Qualitative
+
+\begin{quote}
+\raggedright
+\begin{ttfamily}
+("data object*" OR "data artefact*" OR "boundary object*" OR "digital twin" OR "data representation") AND ("machine learning" OR "artificial intelligence" OR "algorithmic system" OR "data-driven") AND ("organization" OR "management" OR "decision making" OR "organizational knowledge") AND ("visualization" OR "interface design" OR "dashboard" OR "representation" OR "human-computer interaction")
+\end{ttfamily}
+\end{quote}
+
+\subsection{Data Extraction} \label{data-extraction}
+
+Selection - Quantitative + Qualitative
+
+\subsection{Quality Appraisal} \label{quality-appraisal}
+
+Selection - Quantitative + Qualitative + Explicit
+
+\subsection{Study Synthesization} \label{study-synthesization}
+
+Execution -  Quantitative + Qualitative + Quantitative \& Qualitative - Explicit 
+
+
+\subsection{Writing the Review} \label{writing-the-review}
+
+Execution - Explicit + Reproducible
+
+\section{Structured Literature Review Results} \label{slr-results}
+
+\subsection{Overview of Identified Literature} \label{overview-of-identified-literature}
+
+\subsection{Technical Origin of Data Objects in ML Contexts} \label{technical-origin}
+
+\subsection{Data Objects as Boundary Objects in Organizational Contexts} \label{organizational-contexts}
+
+\subsection{Visualization and Interface Design as Epistemic Factors} \label{visualization}
+
+\section{Discussion} \label{discussion}
+
+\section{Future Research Directions} \label{future-research-directions}
+
+\section{Conclusion} \label{conclusion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Literaturverzeichnis wird 
